@@ -1,0 +1,55 @@
+/* 1. SELECTOR PADRE O PRINCIPAL */
+:root{
+    --color-primario:#EC111A;
+    --color-secundario:#082BA5;
+    --color-parrafos: #53575A;
+    --color-titulos: #282D31;
+}
+/*3. SELECTOR UNIVERSAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SELECTOR HIJO*/
+body{
+    background-color: var(--color-fondo);
+}
+
+/* 2. SELECTOR DE CLASE (CLASS): EL PUNTO (.) */
+.titulo2{
+    color: var(--color-secundario);
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.titulo1{
+    color: var(--color-primario);
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-top: -.3em;
+}
+
+.parrafo{
+    color: var(--color-parrafos);
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.enlace{
+    background-color: var(--color-primario);
+    color: #fff;
+    padding: 1em;
+    border-radius: .6em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* PSEUDO CLASE */
+.enlace:hover{
+    color: yellow;
+    background-color: var(--color-secundario);
+    transition: background-color .5s ease-in-out;
+}
